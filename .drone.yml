@@ -1,0 +1,18 @@
+kind: pipeline
+name: default
+
+
+workspace:
+  path: /drone/src
+  
+steps:
+- name: run-test
+  image: blazerunner/blazemeter
+  environment:   
+    apikey:
+      from_secret: apiKey
+    apisecret:
+      from_secret: apiSecret
+    createtest: false   
+    testid: 10038592
+    continuepipeline: false
