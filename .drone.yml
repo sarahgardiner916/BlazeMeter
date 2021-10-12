@@ -7,7 +7,7 @@ workspace:
   
 steps:
 - name: run-test
-  image: blazerunner/blazemeter
+  image: blazerunner/blazemeter:1.0
   environment:   
     apikey:
       from_secret: apiKey
