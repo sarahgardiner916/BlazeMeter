@@ -14,5 +14,5 @@ steps:
     apisecret:
       from_secret: apiSecret
     createtest: false   
-    testid: 10038592
+    testid: 
     continuepipeline: false
